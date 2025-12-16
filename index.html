@@ -15,197 +15,347 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<title>Список студентов</title>
+    <title>Список студентов — Группа ПК-25</title>
 
-<style>
+    <style>
 
-body {
+        body {
 
-  margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
 
-  font-family: Arial, sans-serif;
+            margin: 0;
 
-  background: #f2f5f9;
+            padding: 0;
 
-}
+            background-color: #f2f2f2;
 
-header {
+            color: #333;
 
-  background: #4a7bd0;
+            transition: 0.3s;
 
-  color: white;
+        }
 
-  padding: 18px;
+        body.dark {
 
-  text-align: center;
+            background-color: #121212;
 
-  font-size: 24px;
+            color: #f2f2f2;
 
-}
+        }
 
-.container {
+        header {
 
-  max-width: 900px;
+            display: flex;
 
-  margin: 30px auto;
+            justify-content: space-between;
 
-  background: white;
+            align-items: center;
 
-  border-radius: 12px;
+            padding: 20px;
 
-  padding: 20px;
+            background-color: #4A90E2;
 
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            color: white;
 
-}
+        }
 
-h2 {
+        header.dark {
 
-  margin-bottom: 15px;
+            background-color: #1F1F1F;
 
-}
+        }
 
-table {
+        .group-name {
 
-  width: 100%;
+            font-weight: bold;
 
-  border-collapse: collapse;
+            font-size: 20px;
 
-}
+        }
 
-th {
+        .search-container {
 
-  background: #4a7bd0;
+            text-align: center;
 
-  color: white;
+            margin: 20px 0;
 
-  padding: 10px;
+        }
 
-  text-align: left;
+        .search-container input {
 
-}
+            padding: 10px;
 
-td {
+            width: 300px;
 
-  padding: 10px;
+            font-size: 16px;
 
-}
+            border-radius: 8px;
 
-tr:nth-child(even) {
+            border: 1px solid #ccc;
 
-  background: #f4f7fb;
+        }
 
-}
+        .toggle-theme {
 
-a.student {
+            margin-left: 15px;
 
-  color: #2a5db0;
+            padding: 10px 15px;
 
-  text-decoration: none;
+            font-size: 14px;
 
-  font-weight: 500;
+            cursor: pointer;
 
-}
+            border-radius: 8px;
 
-a.student:hover {
+            border: none;
 
-  text-decoration: underline;
+            background-color: #357ABD;
 
-}
+            color: white;
 
-footer {
+            transition: 0.3s;
 
-  text-align: center;
+        }
 
-  padding: 20px;
+        .toggle-theme:hover {
 
-  color: #777;
+            background-color: #2a5a9c;
 
-}
+        }
 
-</style>
+        .student-list {
+
+            width: 90%;
+
+            max-width: 600px;
+
+            margin: 0 auto 20px auto;
+
+        }
+
+        .student-item {
+
+            padding: 10px 0;
+
+            border-bottom: 1px solid #ccc;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .student-item a {
+
+            text-decoration: none;
+
+            color: #4A90E2;
+
+            font-weight: bold;
+
+        }
+
+        body.dark .student-item a {
+
+            color: #66aaff;
+
+        }
+
+        body.dark .student-item {
+
+            border-color: #555;
+
+        }
+
+        .dob {
+
+            margin-left: 10px;
+
+            font-size: 14px;
+
+            color: #555;
+
+        }
+
+        body.dark .dob {
+
+            color: #ccc;
+
+        }
+
+        .group-label {
+
+            margin-left: 10px;
+
+            font-size: 14px;
+
+            color: #333;
+
+            font-weight: bold;
+
+        }
+
+        body.dark .group-label {
+
+            color: #ccc;
+
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-<header>Список студентов</header>
+<header id="header">
 
-<div class="container">
+    <div class="group-name">Группа ПК-25</div>
 
-<h2>Группа: ПК-2025</h2>
+    <button class="toggle-theme" id="themeBtn">🌙 Тёмная тема</button>
 
-<table>
+</header>
 
-<tr>
+<div class="search-container">
 
-<th>№</th>
-
-<th>ФИО</th>
-
-<th>Дата рождения</th>
-
-</tr>
-
-<tr><td>1</td><td><a class="student" href="students/jasmin.html">А. Жасмин</a></td><td>01.12.2009</td></tr>
-
-<tr><td>2</td><td><a class="student" href="students/gulzhigit.html">А. Гулжигит</a></td><td>16.07.2010</td></tr>
-
-<tr><td>3</td><td><a class="student" href="students/shirin.html">А. Ширин</a></td><td>14.02.2010</td></tr>
-
-<tr><td>4</td><td><a class="student" href="students/nurmuhammed.html">Б. Нурмухаммед</a></td><td>01.12.2009</td></tr>
-
-<tr><td>5</td><td><a class="student" href="students/arhles.html">Б. Архлес</a></td><td>25.02.2008</td></tr>
-
-<tr><td>6</td><td><a class="student" href="students/malika.html">Д. Малика</a></td><td>21.09.2010</td></tr>
-
-<tr><td>7</td><td><a class="student" href="students/aigerim.html">Д. Айгерим</a></td><td>26.09.2009</td></tr>
-
-<tr><td>8</td><td><a class="student" href="students/asiya.html">Ж. Асия</a></td><td>21.12.2009</td></tr>
-
-<tr><td>9</td><td><a class="student" href="students/sulaiman.html">З. Сулайман</a></td><td>10.03.2010</td></tr>
-
-<tr><td>10</td><td><a class="student" href="students/alim.html">И. Алим</a></td><td>09.02.2010</td></tr>
-
-<tr><td>11</td><td><a class="student" href="students/zeynep.html">К. Зейнеп</a></td><td>04.11.2009</td></tr>
-
-<tr><td>12</td><td><a class="student" href="students/fatima.html">К. Фатима</a></td><td>16.10.2009</td></tr>
-
-<tr><td>13</td><td><a class="student" href="students/aman.html">К. Аман</a></td><td>12.04.2009</td></tr>
-
-<tr><td>14</td><td><a class="student" href="students/aizirek.html">М. Айзирек</a></td><td>16.05.2010</td></tr>
-
-<tr><td>15</td><td><a class="student" href="students/arda.html">М. Арда</a></td><td>10.04.2009</td></tr>
-
-<tr><td>16</td><td><a class="student" href="students/aiperi.html">М. Айпери</a></td><td>29.07.2009</td></tr>
-
-<tr><td>17</td><td><a class="student" href="students/asema.html">Н. Асема</a></td><td>07.03.2009</td></tr>
-
-<tr><td>18</td><td><a class="student" href="students/ariet.html">Р. Ариет</a></td><td>30.01.2009</td></tr>
-
-<tr><td>19</td><td><a class="student" href="students/bayastan.html">Р. Баястан</a></td><td>02.05.2010</td></tr>
-
-<tr><td>20</td><td><a class="student" href="students/sezim.html">С. Сезим</a></td><td>10.12.2008</td></tr>
-
-<tr><td>21</td><td><a class="student" href="students/rasul.html">С. Расул</a></td><td>13.08.2010</td></tr>
-
-<tr><td>22</td><td><a class="student" href="students/ayana.html">С. Аяна</a></td><td>11.09.2010</td></tr>
-
-<tr><td>23</td><td><a class="student" href="students/eldiyar.html">Т. Элдияр</a></td><td>03.05.2009</td></tr>
-
-<tr><td>24</td><td><a class="student" href="students/sumaya.html">У. Сумая</a></td><td>28.03.2010</td></tr>
-
-<tr><td>25</td><td><a class="student" href="students/hayat.html">Х. Хаят</a></td><td>17.09.2010</td></tr>
-
-<tr><td>26</td><td><a class="student" href="students/nazima.html">Ю. Назима</a></td><td>30.03.2010</td></tr>
-
-</table>
+    <input type="text" id="searchInput" onkeyup="searchStudents()" placeholder="Поиск по имени или фамилии...">
 
 </div>
 
-<footer>© 2025. Учебный список студентов.</footer>
+<div class="student-list" id="studentList">
+
+    <div class="student-item"><span>1:</span> <a href="students/jasmin.html">А. Жасмин</a> <span class="dob">(01.12.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>2:</span> <a href="students/gulzhigit.html">А. Гулжигит</a> <span class="dob">(16.07.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>3:</span> <a href="students/shirin.html">А. Ширин</a> <span class="dob">(14.02.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>4:</span> <a href="students/nurmuhammed.html">Б. Нурмухаммед</a> <span class="dob">(01.12.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>5:</span> <a href="students/arkhles.html">Б. Архлес</a> <span class="dob">(25.02.08)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>6:</span> <a href="students/malika.html">Д. Малика</a> <span class="dob">(21.09.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>7:</span> <a href="students/aigerim.html">Д. Айгерим</a> <span class="dob">(26.09.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>8:</span> <a href="students/asiya.html">Ж. Асия</a> <span class="dob">(21.12.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>9:</span> <a href="students/sulaiman.html">З. Сулайман</a> <span class="dob">(10.03.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>10:</span> <a href="students/alim.html">И. Алим</a> <span class="dob">(09.02.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>11:</span> <a href="students/zeynep.html">К. Зейнеп</a> <span class="dob">(04.11.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>12:</span> <a href="students/fatima.html">К. Фатима</a> <span class="dob">(16.10.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>13:</span> <a href="students/aman.html">К. Аман</a> <span class="dob">(12.04.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>14:</span> <a href="students/aizirek.html">М. Айзирек</a> <span class="dob">(16.05.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>15:</span> <a href="students/arda.html">М. Арда</a> <span class="dob">(10.04.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>16:</span> <a href="students/aiperi.html">М. Айпери</a> <span class="dob">(29.07.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>17:</span> <a href="students/asema.html">Н. Асема</a> <span class="dob">(07.03.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>18:</span> <a href="students/ariet.html">Р. Ариет</a> <span class="dob">(30.01.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>19:</span> <a href="students/bayastan.html">Р. Баястан</a> <span class="dob">(02.05.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>20:</span> <a href="students/sezim.html">С. Сезим</a> <span class="dob">(10.12.08)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>21:</span> <a href="students/rasul.html">С. Расул</a> <span class="dob">(13.08.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>22:</span> <a href="students/ayana.html">С. Аяна</a> <span class="dob">(11.09.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>23:</span> <a href="students/eldiyar.html">Т. Элдияр</a> <span class="dob">(03.05.09)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>24:</span> <a href="students/sumaya.html">У. Сумая</a> <span class="dob">(28.03.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>25:</span> <a href="students/hayat.html">Х. Хаят</a> <span class="dob">(17.09.10)</span> <span class="group-label">ПК-25</span></div>
+
+    <div class="student-item"><span>26:</span> <a href="students/nazima.html">Ю. Назима</a> <span class="dob">(30.03.10)</span> <span class="group-label">ПК-25</span></div>
+
+</div>
+
+<script>
+
+    // Поиск студентов
+
+    function searchStudents() {
+
+        const input = document.getElementById('searchInput').value.toLowerCase();
+
+        const items = document.getElementsByClassName('student-item');
+
+        for (let i = 0; i < items.length; i++) {
+
+            const text = items[i].innerText.toLowerCase();
+
+            if (text.includes(input)) {
+
+                items[i].style.display = "flex";
+
+            } else {
+
+                items[i].style.display = "none";
+
+            }
+
+        }
+
+    }
+
+    // Переключение тёмной темы с сохранением в localStorage
+
+    const themeBtn = document.getElementById('themeBtn');
+
+    function toggleTheme() {
+
+        document.body.classList.toggle('dark');
+
+        document.getElementById('header').classList.toggle('dark');
+
+        if(document.body.classList.contains('dark')) {
+
+            localStorage.setItem('theme', 'dark');
+
+            themeBtn.innerText = '☀️ Светлая тема';
+
+        } else {
+
+            localStorage.setItem('theme', 'light');
+
+            themeBtn.innerText = '🌙 Тёмная тема';
+
+        }
+
+    }
+
+    themeBtn.addEventListener('click', toggleTheme);
+
+    // Проверка темы при загрузке страницы
+
+    window.onload = function() {
+
+        const savedTheme = localStorage.getItem('theme');
+
+        if(savedTheme === 'dark') {
+
+            document.body.classList.add('dark');
+
+            document.getElementById('header').classList.add('dark');
+
+            themeBtn.innerText = '☀️ Светлая тема';
+
+        }
+
+    }
+
+</script>
 
 </body>
 
