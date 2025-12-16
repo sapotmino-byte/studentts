@@ -55,7 +55,7 @@
 
         .container {
 
-            max-width: 800px;
+            max-width: 900px;
 
             margin: 40px auto;
 
@@ -79,39 +79,43 @@
 
         }
 
-        ul {
+        table {
 
-            list-style: none;
+            width: 100%;
 
-            padding: 0;
+            border-collapse: collapse;
 
-        }
+            margin-top: 20px;
 
-        li {
-
-            background: #eaf3ff;
-
-            padding: 15px;
-
-            margin-bottom: 10px;
-
-            border-radius: 8px;
-
-            font-size: 18px;
-
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: center;
+            font-size: 17px;
 
         }
 
-        .id {
+        th, td {
 
-            font-weight: bold;
+            padding: 12px;
 
-            color: #4A90E2;
+            text-align: left;
+
+        }
+
+        th {
+
+            background: #4A90E2;
+
+            color: white;
+
+        }
+
+        tr:nth-child(even) {
+
+            background: #f2f7ff;
+
+        }
+
+        tr:hover {
+
+            background: #e6f0ff;
 
         }
 
@@ -125,7 +129,7 @@
 
             color: #666;
 
-            margin-top: 20px;
+            margin-top: 30px;
 
         }
 
@@ -141,25 +145,79 @@
 
     <h2>Группа: ИК-2025</h2>
 
-    <ul>
+    <table>
 
-        <li><span>Абдирашитов Озодбек</span> <span class="id">ID: 01</span></li>
+        <thead>
 
-        <li><span>Акрамжанов Озодбек</span> <span class="id">ID: 02</span></li>
+            <tr>
 
-        <li><span>Аширбеков Адахан</span> <span class="id">ID: 03</span></li>
+                <th>№</th>
 
-        <li><span>Толобаева Хадижа</span> <span class="id">ID: 04</span></li>
+                <th>ФИО</th>
 
-        <li><span>Мийзамидинова Айгул</span> <span class="id">ID: 05</span></li>
+                <th>Дата рождения</th>
 
-<li><span>Сатирова Асел</span> <span class="id">ID: 06</span></li>
+            </tr>
 
-<li><span>Сунуйалиев Нурмухаммед</span> <span class="id">ID: 07</span></li>
+        </thead>
 
-<li><span>Мамасалиева Зайтуна</span> <span class="id">ID: 08</span></li>
+        <tbody>
 
-    </ul>
+            <tr><td>1</td><td>А. Жасмин</td><td>01.12.2009</td></tr>
+
+            <tr><td>2</td><td>А. Гулжигит</td><td>16.07.2010</td></tr>
+
+            <tr><td>3</td><td>А. Ширин</td><td>14.02.2010</td></tr>
+
+            <tr><td>4</td><td>Б. Нурмухаммед</td><td>01.12.2009</td></tr>
+
+            <tr><td>5</td><td>Б. Архлес</td><td>25.02.2008</td></tr>
+
+            <tr><td>6</td><td>Д. Малика</td><td>21.09.2010</td></tr>
+
+            <tr><td>7</td><td>Д. Айгерим</td><td>26.09.2009</td></tr>
+
+            <tr><td>8</td><td>Ж. Асия</td><td>21.12.2009</td></tr>
+
+            <tr><td>9</td><td>З. Сулайман</td><td>10.03.2010</td></tr>
+
+            <tr><td>10</td><td>И. Алим</td><td>09.02.2010</td></tr>
+
+            <tr><td>11</td><td>К. Зейнеп</td><td>04.11.2009</td></tr>
+
+            <tr><td>12</td><td>К. Фатима</td><td>16.10.2009</td></tr>
+
+            <tr><td>13</td><td>К. Аман</td><td>12.04.2009</td></tr>
+
+            <tr><td>14</td><td>М. Айзирек</td><td>16.05.2010</td></tr>
+
+            <tr><td>15</td><td>М. Арда</td><td>10.04.2009</td></tr>
+
+            <tr><td>16</td><td>М. Айпери</td><td>29.07.2009</td></tr>
+
+            <tr><td>17</td><td>Н. Асема</td><td>07.03.2009</td></tr>
+
+            <tr><td>18</td><td>Р. Ариет</td><td>30.01.2009</td></tr>
+
+            <tr><td>19</td><td>Р. Баястан</td><td>02.05.2010</td></tr>
+
+            <tr><td>20</td><td>С. Сезим</td><td>10.12.2008</td></tr>
+
+            <tr><td>21</td><td>С. Расул</td><td>13.08.2010</td></tr>
+
+            <tr><td>22</td><td>С. Аяна</td><td>11.09.2010</td></tr>
+
+            <tr><td>23</td><td>Т. Элдияр</td><td>03.05.2009</td></tr>
+
+            <tr><td>24</td><td>У. Сумая</td><td>28.03.2010</td></tr>
+
+            <tr><td>25</td><td>Х. Хаят</td><td>17.09.2010</td></tr>
+
+            <tr><td>26</td><td>Ю. Назима</td><td>30.03.2010</td></tr>
+
+        </tbody>
+
+    </table>
 
 </div>
 
