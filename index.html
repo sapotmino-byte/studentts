@@ -15,125 +15,117 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <title>Список студентов</title>
+<title>Список студентов</title>
 
-    <style>
+<style>
 
-        body {
+body {
 
-            margin: 0;
+  margin: 0;
 
-            padding: 0;
+  font-family: Arial, sans-serif;
 
-            font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f5f9;
 
-            background: #f2f5f8;
+}
 
-        }
+header {
 
-        header {
+  background: #4a7bd0;
 
-            background: #4A90E2;
+  color: white;
 
-            color: white;
+  padding: 18px;
 
-            padding: 20px;
+  text-align: center;
 
-            text-align: center;
+  font-size: 24px;
 
-            font-size: 28px;
+}
 
-            font-weight: bold;
+.container {
 
-            letter-spacing: 1px;
+  max-width: 900px;
 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  margin: 30px auto;
 
-        }
+  background: white;
 
-        .container {
+  border-radius: 12px;
 
-            max-width: 900px;
+  padding: 20px;
 
-            margin: 40px auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 
-            background: white;
+}
 
-            padding: 25px;
+h2 {
 
-            border-radius: 12px;
+  margin-bottom: 15px;
 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
 
-        }
+table {
 
-        h2 {
+  width: 100%;
 
-            border-left: 5px solid #4A90E2;
+  border-collapse: collapse;
 
-            padding-left: 10px;
+}
 
-            color: #333;
+th {
 
-        }
+  background: #4a7bd0;
 
-        table {
+  color: white;
 
-            width: 100%;
+  padding: 10px;
 
-            border-collapse: collapse;
+  text-align: left;
 
-            margin-top: 20px;
+}
 
-            font-size: 17px;
+td {
 
-        }
+  padding: 10px;
 
-        th, td {
+}
 
-            padding: 12px;
+tr:nth-child(even) {
 
-            text-align: left;
+  background: #f4f7fb;
 
-        }
+}
 
-        th {
+a.student {
 
-            background: #4A90E2;
+  color: #2a5db0;
 
-            color: white;
+  text-decoration: none;
 
-        }
+  font-weight: 500;
 
-        tr:nth-child(even) {
+}
 
-            background: #f2f7ff;
+a.student:hover {
 
-        }
+  text-decoration: underline;
 
-        tr:hover {
+}
 
-            background: #e6f0ff;
+footer {
 
-        }
+  text-align: center;
 
-        footer {
+  padding: 20px;
 
-            text-align: center;
+  color: #777;
 
-            padding: 20px;
+}
 
-            font-size: 14px;
-
-            color: #666;
-
-            margin-top: 30px;
-
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -143,81 +135,73 @@
 
 <div class="container">
 
-    <h2>Группа: ПК-2025</h2>
+<h2>Группа: ПК-2025</h2>
 
-    <table>
+<table>
 
-        <thead>
+<tr>
 
-            <tr>
+<th>№</th>
 
-                <th>№</th>
+<th>ФИО</th>
 
-                <th>ФИО</th>
+<th>Дата рождения</th>
 
-                <th>Дата рождения</th>
+</tr>
 
-            </tr>
+<tr><td>1</td><td><a class="student" href="students/jasmin.html">А. Жасмин</a></td><td>01.12.2009</td></tr>
 
-        </thead>
+<tr><td>2</td><td><a class="student" href="students/gulzhigit.html">А. Гулжигит</a></td><td>16.07.2010</td></tr>
 
-        <tbody>
+<tr><td>3</td><td><a class="student" href="students/shirin.html">А. Ширин</a></td><td>14.02.2010</td></tr>
 
-            <tr><td>1</td><td>А. Жасмин</td><td>01.12.2009</td></tr>
+<tr><td>4</td><td><a class="student" href="students/nurmuhammed.html">Б. Нурмухаммед</a></td><td>01.12.2009</td></tr>
 
-            <tr><td>2</td><td>А. Гулжигит</td><td>16.07.2010</td></tr>
+<tr><td>5</td><td><a class="student" href="students/arhles.html">Б. Архлес</a></td><td>25.02.2008</td></tr>
 
-            <tr><td>3</td><td>А. Ширин</td><td>14.02.2010</td></tr>
+<tr><td>6</td><td><a class="student" href="students/malika.html">Д. Малика</a></td><td>21.09.2010</td></tr>
 
-            <tr><td>4</td><td>Б. Нурмухаммед</td><td>01.12.2009</td></tr>
+<tr><td>7</td><td><a class="student" href="students/aigerim.html">Д. Айгерим</a></td><td>26.09.2009</td></tr>
 
-            <tr><td>5</td><td>Б. Архлес</td><td>25.02.2008</td></tr>
+<tr><td>8</td><td><a class="student" href="students/asiya.html">Ж. Асия</a></td><td>21.12.2009</td></tr>
 
-            <tr><td>6</td><td>Д. Малика</td><td>21.09.2010</td></tr>
+<tr><td>9</td><td><a class="student" href="students/sulaiman.html">З. Сулайман</a></td><td>10.03.2010</td></tr>
 
-            <tr><td>7</td><td>Д. Айгерим</td><td>26.09.2009</td></tr>
+<tr><td>10</td><td><a class="student" href="students/alim.html">И. Алим</a></td><td>09.02.2010</td></tr>
 
-            <tr><td>8</td><td>Ж. Асия</td><td>21.12.2009</td></tr>
+<tr><td>11</td><td><a class="student" href="students/zeynep.html">К. Зейнеп</a></td><td>04.11.2009</td></tr>
 
-            <tr><td>9</td><td>З. Сулайман</td><td>10.03.2010</td></tr>
+<tr><td>12</td><td><a class="student" href="students/fatima.html">К. Фатима</a></td><td>16.10.2009</td></tr>
 
-            <tr><td>10</td><td>И. Алим</td><td>09.02.2010</td></tr>
+<tr><td>13</td><td><a class="student" href="students/aman.html">К. Аман</a></td><td>12.04.2009</td></tr>
 
-            <tr><td>11</td><td>К. Зейнеп</td><td>04.11.2009</td></tr>
+<tr><td>14</td><td><a class="student" href="students/aizirek.html">М. Айзирек</a></td><td>16.05.2010</td></tr>
 
-            <tr><td>12</td><td>К. Фатима</td><td>16.10.2009</td></tr>
+<tr><td>15</td><td><a class="student" href="students/arda.html">М. Арда</a></td><td>10.04.2009</td></tr>
 
-            <tr><td>13</td><td>К. Аман</td><td>12.04.2009</td></tr>
+<tr><td>16</td><td><a class="student" href="students/aiperi.html">М. Айпери</a></td><td>29.07.2009</td></tr>
 
-            <tr><td>14</td><td>М. Айзирек</td><td>16.05.2010</td></tr>
+<tr><td>17</td><td><a class="student" href="students/asema.html">Н. Асема</a></td><td>07.03.2009</td></tr>
 
-            <tr><td>15</td><td>М. Арда</td><td>10.04.2009</td></tr>
+<tr><td>18</td><td><a class="student" href="students/ariet.html">Р. Ариет</a></td><td>30.01.2009</td></tr>
 
-            <tr><td>16</td><td>М. Айпери</td><td>29.07.2009</td></tr>
+<tr><td>19</td><td><a class="student" href="students/bayastan.html">Р. Баястан</a></td><td>02.05.2010</td></tr>
 
-            <tr><td>17</td><td>Н. Асема</td><td>07.03.2009</td></tr>
+<tr><td>20</td><td><a class="student" href="students/sezim.html">С. Сезим</a></td><td>10.12.2008</td></tr>
 
-            <tr><td>18</td><td>Р. Ариет</td><td>30.01.2009</td></tr>
+<tr><td>21</td><td><a class="student" href="students/rasul.html">С. Расул</a></td><td>13.08.2010</td></tr>
 
-            <tr><td>19</td><td>Р. Баястан</td><td>02.05.2010</td></tr>
+<tr><td>22</td><td><a class="student" href="students/ayana.html">С. Аяна</a></td><td>11.09.2010</td></tr>
 
-            <tr><td>20</td><td>С. Сезим</td><td>10.12.2008</td></tr>
+<tr><td>23</td><td><a class="student" href="students/eldiyar.html">Т. Элдияр</a></td><td>03.05.2009</td></tr>
 
-            <tr><td>21</td><td>С. Расул</td><td>13.08.2010</td></tr>
+<tr><td>24</td><td><a class="student" href="students/sumaya.html">У. Сумая</a></td><td>28.03.2010</td></tr>
 
-            <tr><td>22</td><td>С. Аяна</td><td>11.09.2010</td></tr>
+<tr><td>25</td><td><a class="student" href="students/hayat.html">Х. Хаят</a></td><td>17.09.2010</td></tr>
 
-            <tr><td>23</td><td>Т. Элдияр</td><td>03.05.2009</td></tr>
+<tr><td>26</td><td><a class="student" href="students/nazima.html">Ю. Назима</a></td><td>30.03.2010</td></tr>
 
-            <tr><td>24</td><td>У. Сумая</td><td>28.03.2010</td></tr>
-
-            <tr><td>25</td><td>Х. Хаят</td><td>17.09.2010</td></tr>
-
-            <tr><td>26</td><td>Ю. Назима</td><td>30.03.2010</td></tr>
-
-        </tbody>
-
-    </table>
+</table>
 
 </div>
 
