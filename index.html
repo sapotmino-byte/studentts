@@ -109,6 +109,8 @@ h2 {
 
   margin-bottom: 20px;
 
+  box-sizing: border-box;
+
 }
 
 body.dark #searchInput {
@@ -165,41 +167,31 @@ body.dark tr:nth-child(even) {
 
 }
 
-a.student {
+a.gallery-btn {
 
-  color: #2a5db0;
+  display: inline-block;
+
+  margin-top: 30px;
+
+  padding: 15px 25px;
+
+  font-size: 18px;
+
+  background: #4a7bd0;
+
+  color: white;
+
+  border-radius: 12px;
 
   text-decoration: none;
 
-  font-weight: 500;
+  transition: 0.2s;
 
 }
 
-body.dark a.student {
+a.gallery-btn:hover {
 
-  color: #66aaff;
-
-}
-
-a.student:hover {
-
-  text-decoration: underline;
-
-}
-
-footer {
-
-  text-align: center;
-
-  padding: 20px;
-
-  color: #777;
-
-}
-
-body.dark footer {
-
-  color: #bbb;
+  background: #2a5a99;
 
 }
 
@@ -235,6 +227,22 @@ body.dark footer {
 
 }
 
+footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  color: #777;
+
+}
+
+body.dark footer {
+
+  color: #bbb;
+
+}
+
 </style>
 
 </head>
@@ -253,7 +261,7 @@ body.dark footer {
 
 <h2>Группа: ПК-2025</h2>
 
-<input type="text" id="searchInput" placeholder="Поиск студентов по имени или фамилии..." onkeyup="searchStudents()">
+<input type="text" id="searchInput" placeholder="🔍 Поиск студентов по имени или фамилии..." onkeyup="searchStudents()">
 
 <table id="studentTable">
 
@@ -267,61 +275,67 @@ body.dark footer {
 
 </tr>
 
-<!-- Отсортировано по фамилии -->
+<!-- Список студентов по алфавиту по фамилии -->
 
-<tr><td>1</td><td><a class="student" href="students/shalimov.html">Абдилатов Гулжигит</a></td><td>14.02.2010</td></tr>
+<tr><td>1</td><td>Абдилатов Гулжигит</td><td>16.07.2010</td></tr>
 
-<tr><td>2</td><td><a class="student" href="students/jasmin.html">Абдыразакова Жасмин</a></td><td>01.12.2009</td></tr>
+<tr><td>2</td><td>Абдыкайымова Ширин</td><td>14.02.2010</td></tr>
 
-<tr><td>3</td><td><a class="student" href="students/shirin.html">Абдыкайымова Ширин</a></td><td>14.02.2010</td></tr>
+<tr><td>3</td><td>Абдыразакова Жасмин</td><td>01.12.2009</td></tr>
 
-<tr><td>4</td><td><a class="student" href="students/burhanidinov.html">Бурханидинов Архлес</a></td><td>25.02.2008</td></tr>
+<tr><td>4</td><td>Бакиров Нурмухамед</td><td>01.12.2009</td></tr>
 
-<tr><td>5</td><td><a class="student" href="students/bayastan.html">Рахманалиев Баястан</a></td><td>02.05.2010</td></tr>
+<tr><td>5</td><td>Бурханидинов Архлес</td><td>25.02.2008</td></tr>
 
-<tr><td>6</td><td><a class="student" href="students/baqirov.html">Бакиров Нурмухамед</a></td><td>01.12.2009</td></tr>
+<tr><td>6</td><td>Джумабекова Айгерим</td><td>26.09.2009</td></tr>
 
-<tr><td>7</td><td><a class="student" href="students/ayana.html">Салиева Аяна</a></td><td>11.09.2010</td></tr>
+<tr><td>7</td><td>Дуйшоева Малика</td><td>21.09.2010</td></tr>
 
-<tr><td>8</td><td><a class="student" href="students/eldiyar.html">Тургунов Элдияр</a></td><td>01.12.2009</td></tr>
+<tr><td>8</td><td>Имаров Алимбек</td><td>09.02.2010</td></tr>
 
-<tr><td>9</td><td><a class="student" href="students/aigerim.html">Джумабекова Айгерим</a></td><td>26.09.2009</td></tr>
+<tr><td>9</td><td>Камбпрова Зейнеп</td><td>04.11.2009</td></tr>
 
-<tr><td>10</td><td><a class="student" href="students/duyshoeva.html">Дуйшоева Малика</a></td><td>16.07.2010</td></tr>
+<tr><td>10</td><td>Камалова Фатима</td><td>16.10.2009</td></tr>
 
-<tr><td>11</td><td><a class="student" href="students/arda.html">Маматиков Арда</a></td><td>10.04.2009</td></tr>
+<tr><td>11</td><td>Куштаров Амангелди</td><td>12.04.2009</td></tr>
 
-<tr><td>12</td><td><a class="student" href="students/aiperi.html">Маматкулова Айпери</a></td><td>29.07.2009</td></tr>
+<tr><td>12</td><td>Маматиков Арда</td><td>10.04.2009</td></tr>
 
-<tr><td>13</td><td><a class="student" href="students/aizirek.html">Мустапаева Айзирек</a></td><td>16.05.2010</td></tr>
+<tr><td>13</td><td>Маматкулова Айпери</td><td>29.07.2009</td></tr>
 
-<tr><td>14</td><td><a class="student" href="students/alim.html">Имаров Алимбек</a></td><td>09.02.2010</td></tr>
+<tr><td>14</td><td>Мустапаева Айзирек</td><td>16.05.2010</td></tr>
 
-<tr><td>15</td><td><a class="student" href="students/asing.html">Куштаров Амангелди</a></td><td>12.04.2009</td></tr>
+<tr><td>15</td><td>Назарова Асема</td><td>07.03.2009</td></tr>
 
-<tr><td>16</td><td><a class="student" href="students/fatima.html">Камалова Фатима</a></td><td>16.10.2009</td></tr>
+<tr><td>16</td><td>Рахманалиев Баястан</td><td>02.05.2010</td></tr>
 
-<tr><td>17</td><td><a class="student" href="students/zeynep.html">Камбпрова Зейнеп</a></td><td>04.11.2009</td></tr>
+<tr><td>17</td><td>Рыспаев Ариет</td><td>30.01.2009</td></tr>
 
-<tr><td>18</td><td><a class="student" href="students/asiya.html">Жороева Асия</a></td><td>21.12.2009</td></tr>
+<tr><td>18</td><td>Салиева Аяна</td><td>11.09.2010</td></tr>
 
-<tr><td>19</td><td><a class="student" href="students/sezim.html">Сулайманова Сезим</a></td><td>10.12.2008</td></tr>
+<tr><td>19</td><td>Сулайманова Сезим</td><td>10.12.2008</td></tr>
 
-<tr><td>20</td><td><a class="student" href="students/sulaiman.html">Зиёмидинов Сулайман</a></td><td>10.03.2010</td></tr>
+<tr><td>20</td><td>Суйунов Расул</td><td>13.08.2010</td></tr>
 
-<tr><td>21</td><td><a class="student" href="students/hayat.html">Хайдарова Хаят</a></td><td>17.09.2010</td></tr>
+<tr><td>21</td><td>Тургунов Элдияр</td><td>03.05.2009</td></tr>
 
-<tr><td>22</td><td><a class="student" href="students/nazima.html">Юнусова Назима</a></td><td>30.03.2010</td></tr>
+<tr><td>22</td><td>Урустамова Сумая</td><td>28.03.2010</td></tr>
 
-<tr><td>23</td><td><a class="student" href="students/ariet.html">Рыспаев Ариет</a></td><td>30.01.2009</td></tr>
+<tr><td>23</td><td>Хайдарова Хаят</td><td>17.09.2010</td></tr>
 
-<tr><td>24</td><td><a class="student" href="students/arkhles.html">Бурханидинов Архлес</a></td><td>25.02.2008</td></tr>
+<tr><td>24</td><td>Юнусова Назима</td><td>30.03.2010</td></tr>
 
-<tr><td>25</td><td><a class="student" href="students/shirin2.html">Абдыкайымова Ширин</a></td><td>14.02.2010</td></tr>
+<tr><td>25</td><td>Жороева Асия</td><td>21.12.2009</td></tr>
 
-<tr><td>26</td><td><a class="student" href="students/nurmuhammed.html">Назарова Асема</a></td><td>07.03.2009</td></tr>
+<tr><td>26</td><td>Зиёмидинов Сулайман</td><td>10.03.2010</td></tr>
 
 </table>
+
+<div style="text-align:center;">
+
+  <a href="gallery.html" class="gallery-btn">📸 Галерея группы</a>
+
+</div>
 
 </div>
 
